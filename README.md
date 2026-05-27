@@ -7,6 +7,4 @@ Static **Support** and **Privacy Policy** pages for the **Forbidden!** iOS app.
 - Support: <https://forbidden-app.github.io/forbidden-support/>
 - Privacy Policy: <https://forbidden-app.github.io/forbidden-support/privacy.html>
 
-## Contact
-
-yasin.kbas12@gmail.com
+Contact info is on the Support page.
