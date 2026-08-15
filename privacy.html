@@ -97,37 +97,79 @@
   <main class="card">
     <p class="brand">Forbidden!</p>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: 2026-05-28</p>
+    <p class="updated">Last updated: 2026-08-16</p>
 
-    <p>Forbidden! is a single-device party word game. We do not collect, store, transmit, or share any personal information.</p>
+    <p>Forbidden! is a party word game. Most of it runs entirely on your device. When you play Online with friends, and when the app crashes, a limited amount of information leaves your device. This page explains exactly what, and why.</p>
 
-    <h2>What we don't collect</h2>
+    <p>We don't sell your data, and we don't use it to track you across other companies' apps or websites.</p>
+
+    <h2>What stays on your device</h2>
+    <p>Your settings are saved on your device using Apple's standard storage and are never sent to us:</p>
     <ul>
-      <li>Personal information of any kind</li>
-      <li>Email addresses or names</li>
-      <li>Contact information</li>
-      <li>Usage analytics</li>
-      <li>Crash reports</li>
-      <li>Advertising identifiers</li>
-      <li>Location data</li>
-      <li>Device identifiers beyond those iOS uses internally</li>
+      <li>Round length, number of passes, and whether the forbidden-word penalty is on</li>
+      <li>Sound and haptics</li>
+      <li>App language, card language, and light/dark appearance</li>
+      <li>Team and player names you type in Team mode</li>
+      <li>Whether you have seen the tutorial and the card-language tip</li>
+      <li>Which word-pack version you have downloaded</li>
+    </ul>
+    <p>Deleting the app deletes all of it.</p>
+
+    <h2>Online play — only if you use it</h2>
+    <p>Online play is optional. If you never open it, nothing in this section happens.</p>
+    <p>When you create or join a room, this is shared with our backend and with the other players in your room:</p>
+    <ul>
+      <li>The display name you type. You can use a nickname — it doesn't have to be your real name.</li>
+      <li>A random player ID, created on your device the first time you open Online.</li>
+      <li>The room code, who is in the room, and which team they are on.</li>
+      <li>Game state: the current card and its forbidden words, whose turn it is, scores, and turn timing.</li>
+      <li>The language the host is playing cards in.</li>
+    </ul>
+    <p><strong>About that player ID:</strong> it is a random ID generated on your device and stored there. <strong>It is not an account.</strong> There is no sign-up, no password, no email address, and no user record on our servers. It exists only so players in the same room can be told apart.</p>
+    <p>Rooms are temporary and are usually deleted within about a day of going idle. If you want a room deleted sooner, email us with the room code.</p>
+
+    <h2>Crash reports and app configuration</h2>
+    <p>We use two Google Firebase services:</p>
+    <ul>
+      <li><strong>Crashlytics</strong> — when the app crashes, it sends a crash report: what the app was doing when it stopped, your device model, iOS version, app version, and an anonymous per-install identifier. It is not connected to your name or your online player ID, and it is not used for advertising.</li>
+      <li><strong>Remote Config</strong> — the app checks with Google for settings that let us turn features on or off without shipping an update. This sends an anonymous per-install identifier.</li>
+    </ul>
+    <p>Neither is used to track you.</p>
+
+        <h2>Advertising</h2>
+    <p>Forbidden! includes advertising: occasional full-screen ads between rounds, provided by Google AdMob. To show and measure them, AdMob receives a device identifier, approximate location (from your IP address), and information about how you interacted with the ad.</p>
+    <p>Because Forbidden! is rated 4+ and played by children, we ask Google to treat our traffic as child-directed. That means the ads you see are <strong>not personalised</strong>: they are not based on a profile of you or your interests, and we do not ask for permission to track you across other apps and websites, because we do not do it.</p>
+    <p><strong>Kid Mode never shows ads.</strong> That is built into the app, not a setting that could be switched.</p>
+    <p>Google's privacy policy covers what it does with this data: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></p>
+
+    <h2>What we never collect</h2>
+    <ul>
+      <li>Your contacts, photos, microphone, or camera</li>
+      <li>Your precise location</li>
+      <li>Your email address, phone number, or home address</li>
+      <li>Health, fitness, or financial data</li>
+      <li>Your payment details — tips go through Apple, and we never see your card</li>
+      <li>Your browsing or search history</li>
     </ul>
 
-    <h2>What is stored on your device</h2>
-    <p>The app stores your local game settings on your device using Apple's UserDefaults system. This data never leaves your device. It includes:</p>
+    <h2>Children</h2>
+    <p>Forbidden! is rated 4+ and made for families. We don't ask children for personal information. The only place anyone can type personal information is the online display name, and we suggest using a nickname there.</p>
+    <p>If you believe a child has entered personal information through Online play, email us and we will delete it.</p>
+
+    <h2>Your choices</h2>
     <ul>
-      <li>Round duration preference</li>
-      <li>Maximum passes per round</li>
-      <li>Sound on/off</li>
-      <li>Taboo penalty on/off</li>
-      <li>Whether you have completed the onboarding tutorial</li>
+      <li>Don't use Online play, and nothing leaves your device for it.</li>
+      <li>Use a nickname instead of your real name.</li>
+      <li>Delete the app to remove everything stored on your device.</li>
+      <li>Email us to have a room deleted.</li>
     </ul>
 
-    <h2>Third-party services</h2>
-    <p>Forbidden! does not use any third-party analytics, advertising, or tracking SDKs.</p>
-
-    <h2>Children's privacy</h2>
-    <p>Forbidden! is appropriate for children of all ages. Because we do not collect any data from anyone, we do not knowingly collect data from children.</p>
+    <h2>Services we use</h2>
+    <ul>
+      <li><strong>Google Firebase</strong> (Crashlytics, Remote Config) — <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></li>
+      <li><strong>Supabase</strong> — our own backend for online play</li>
+      <li><strong>Apple</strong> — the App Store and, if you leave a tip, Apple's payment system</li>
+    </ul>
 
     <h2>Changes to this policy</h2>
     <p>If this policy changes, we will update the "Last updated" date above and post the changes on this page.</p>
