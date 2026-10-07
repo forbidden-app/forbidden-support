@@ -99,12 +99,12 @@
     <h1>Privacy Policy</h1>
     <p class="updated">Last updated: 2026-10-07</p>
 
-    <p>Forbidden! is a party word game. Most of it runs entirely on your device. A limited amount of information leaves your device when you play Online with friends, when you buy something, when the app checks for updates, and when the app crashes. This page explains exactly what, and why.</p>
+    <p>Forbidden! is a party word game. Most of it runs entirely on your device. A limited amount of information leaves your device when you play Online with friends, when you buy something, when the app checks for updates, when the app crashes, and as usage statistics that show us how the app is used. This page explains exactly what, and why.</p>
 
     <p>Forbidden! has no ads. We don't sell your data, and we don't track you across other companies' apps or websites.</p>
 
     <h2>What stays on your device</h2>
-    <p>These are saved on your device using Apple's standard storage and are never sent to us:</p>
+    <p>These are saved on your device using Apple's standard storage:</p>
     <ul>
       <li>Round length, number of passes, and whether the forbidden-word penalty is on</li>
       <li>Sound and haptics</li>
@@ -116,6 +116,7 @@
       <li>Which word-pack version you have downloaded</li>
     </ul>
     <p>Deleting the app deletes all of it.</p>
+    <p>We don't receive these saved settings, names, or stats. The usage statistics described below are separate: they include a few facts about a game while you play it, such as its mode, topic, round length, and score, and never a name you type.</p>
 
     <h2>Online play — only if you use it</h2>
     <p>Online play is optional. If you never open it, nothing in this section happens.</p>
@@ -139,7 +140,8 @@
     <p>Forbidden+ is optional. You can subscribe monthly or annually, or buy a one-time lifetime unlock, and you can leave a tip. Every purchase goes through Apple's App Store (or Google Play, where we offer purchases there), under their terms.</p>
     <ul>
       <li>We never see your card or payment details, and we never see your Apple ID.</li>
-      <li>The app checks what you have bought <strong>on your device</strong>, using Apple's StoreKit. Your purchases are not sent to our servers, and we don't keep our own record of them.</li>
+      <li>The app checks what you have bought <strong>on your device</strong>, using Apple's StoreKit. Your purchases are not sent to our own servers.</li>
+      <li>The usage statistics described below record that a purchase was started or finished and which product it was (monthly, annual, or lifetime), and Google Firebase may record the purchase itself, including its price. Neither includes your payment details or your Apple ID.</li>
       <li>Apple gives us sales and subscription reports in App Store Connect.</li>
       <li>You can manage or cancel a subscription at any time in your Apple ID settings.</li>
     </ul>
@@ -156,6 +158,27 @@
     </ul>
     <p>Neither is used to track you or for advertising.</p>
 
+    <h2>Usage statistics</h2>
+    <p>The App Store version of the app uses a third Google Firebase service, <strong>Firebase Analytics</strong>, so we can understand how the app is used — which screens people open and how far they get through a game — and decide what to improve.</p>
+    <p>What it sends:</p>
+    <ul>
+      <li>Which screen you open, from a fixed list (for example Home, Settings, or the topic list).</li>
+      <li>Steps of a game: the cards of the opening introduction, the topic and game mode you pick, the difficulty and round length, how many teams and players there are, and how a round and a game end (score, cards guessed, forbidden words said, cards passed).</li>
+      <li>That the Forbidden+ screen was shown, which product was chosen, and how it ended (for example bought, cancelled, restored, or closed).</li>
+      <li>That creating or joining an online room worked or failed, and how many players were in the room.</li>
+      <li>That new cards were offered, and that they were downloaded.</li>
+      <li>An anonymous per-install identifier created by Firebase, and general device information that Firebase adds by itself: device model, iOS version, app version, language, and country or region.</li>
+      <li>Firebase's own basic events, such as the first time the app is opened, the start of a session, time the app is in use, an app or iOS update, and a purchase.</li>
+    </ul>
+    <p>What it never sends:</p>
+    <ul>
+      <li>Anything you type: no team name, no player name, no online display name, and no room code.</li>
+      <li>Your anonymous online user ID, or any other identifier of ours.</li>
+      <li>An advertising identifier or your device's vendor identifier. The app uses the version of Firebase Analytics without advertising support, and it never asks for permission to track you.</li>
+    </ul>
+    <p><strong>Kid Mode</strong> (Picture Mode and the Kids word game) is treated differently. When Kid Mode is opened, the app sends one event saying so and which of the two it was. From then until you are back on a screen outside Kid Mode, it sends none of the screens or game steps listed above. Firebase's own basic events — that a session started and that the app is in use — can still be sent during that time; they don't name a Kid Mode screen.</p>
+    <p>Usage statistics are not used to track you across other companies' apps or websites, or for advertising.</p>
+
     <h2>What we never collect</h2>
     <ul>
       <li>Your contacts, photos, microphone, or camera</li>
@@ -168,7 +191,7 @@
     </ul>
 
     <h2>Children</h2>
-    <p>Forbidden! is rated 4+ and made for families. We don't ask children for personal information. <strong>Picture Mode</strong>, made for younger players, runs entirely on the device. The only place anyone can type personal information is the online display name, and we suggest using a nickname there.</p>
+    <p>Forbidden! is rated 4+ and made for families. We don't ask children for personal information. <strong>Picture Mode</strong>, made for younger players, is played entirely on the device; the usage statistics described above record that it was opened, not what happens in it. The only place anyone can type personal information is the online display name, and we suggest using a nickname there.</p>
     <p>If you believe a child has entered personal information through Online play, email us and we will delete it.</p>
 
     <h2>Your choices</h2>
@@ -182,7 +205,7 @@
 
     <h2>Services we use</h2>
     <ul>
-      <li><strong>Google Firebase</strong> (Crashlytics, Remote Config) — <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></li>
+      <li><strong>Google Firebase</strong> (Crashlytics, Remote Config, Analytics) — <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></li>
       <li><strong>Supabase</strong> — our backend for online play: anonymous sign-in and rooms — <a href="https://supabase.com/privacy">supabase.com/privacy</a></li>
       <li><strong>Apple</strong> — the App Store and Apple's payment system for purchases</li>
       <li><strong>Our update-check server</strong> — the version check described above</li>
