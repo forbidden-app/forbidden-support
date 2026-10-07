@@ -114,6 +114,7 @@
       <li>The online display name you last used, so you don't have to type it again</li>
       <li>Whether you have seen the tutorial, the card-language tip, and an update reminder</li>
       <li>Which word-pack version you have downloaded</li>
+      <li>Whether you share usage statistics</li>
     </ul>
     <p>Deleting the app deletes all of it.</p>
     <p>We don't receive these saved settings, names, or stats. The usage statistics described below are separate: they include a few facts about a game while you play it, such as its mode, topic, round length, and score, and never a name you type.</p>
@@ -159,7 +160,7 @@
     <p>Neither is used to track you or for advertising.</p>
 
     <h2>Usage statistics</h2>
-    <p>The App Store version of the app uses a third Google Firebase service, <strong>Firebase Analytics</strong>, so we can understand how the app is used — which screens people open and how far they get through a game — and decide what to improve.</p>
+    <p>The App Store version of the app uses a third Google Firebase service, <strong>Firebase Analytics</strong>, so we can understand how the app is used — which screens people open and how far they get through a game — and decide what to improve. It is on by default, and you can turn it off (see "Turning it off" below).</p>
     <p>What it sends:</p>
     <ul>
       <li>Which screen you open, from a fixed list (for example Home, Settings, or the topic list).</li>
@@ -167,8 +168,8 @@
       <li>That the Forbidden+ screen was shown, which product was chosen, and how it ended (for example bought, cancelled, restored, or closed).</li>
       <li>That creating or joining an online room worked or failed, and how many players were in the room.</li>
       <li>That new cards were offered, and that they were downloaded.</li>
-      <li>An anonymous per-install identifier created by Firebase, and general device information that Firebase adds by itself: device model, iOS version, app version, language, and country or region.</li>
-      <li>Firebase's own basic events, such as the first time the app is opened, the start of a session, time the app is in use, an app or iOS update, and a purchase.</li>
+      <li>An anonymous per-install identifier created by Firebase, and general information that Firebase adds by itself: device brand and model, iOS version, app version and the store it came from, the device's language, and an approximate location (country, region, and city) that Google works out from the IP address of the upload.</li>
+      <li>Firebase's own basic events, such as the first time the app is opened, the start of a session, time the app is in use, an app or iOS update, a crash, and a purchase.</li>
     </ul>
     <p>What it never sends:</p>
     <ul>
@@ -176,7 +177,9 @@
       <li>Your anonymous online user ID, or any other identifier of ours.</li>
       <li>An advertising identifier or your device's vendor identifier. The app uses the version of Firebase Analytics without advertising support, and it never asks for permission to track you.</li>
     </ul>
-    <p><strong>Kid Mode</strong> (Picture Mode and the Kids word game) is treated differently. When Kid Mode is opened, the app sends one event saying so and which of the two it was. From then until you are back on a screen outside Kid Mode, it sends none of the screens or game steps listed above. Firebase's own basic events — that a session started and that the app is in use — can still be sent during that time; they don't name a Kid Mode screen.</p>
+    <p><strong>Kid Mode</strong> (Picture Mode and the Kids word game) is treated differently. When Kid Mode is opened, the app sends one event saying so and which of the two it was. From then until you are back on a screen outside Kid Mode, nothing is recorded at all: no screen, no game step, and none of Firebase's own events. Statistics recorded before Kid Mode was opened can still be uploaded during that time; they contain nothing about the time inside Kid Mode.</p>
+    <p><strong>Turning it off:</strong> in the app's Settings, turn off "Share usage statistics". From that moment nothing is recorded, anything recorded but not yet uploaded is deleted from your device, and nothing is sent to Firebase Analytics. If you turn it on again, recording starts from that moment. The switch does not change crash reports or Remote Config, described above.</p>
+    <p><strong>How long we keep it:</strong> usage statistics are kept for 14 months.</p>
     <p>Usage statistics are not used to track you across other companies' apps or websites, or for advertising.</p>
 
     <h2>What we never collect</h2>
@@ -191,13 +194,14 @@
     </ul>
 
     <h2>Children</h2>
-    <p>Forbidden! is rated 4+ and made for families. We don't ask children for personal information. <strong>Picture Mode</strong>, made for younger players, is played entirely on the device; the usage statistics described above record that it was opened, not what happens in it. The only place anyone can type personal information is the online display name, and we suggest using a nickname there.</p>
+    <p>Forbidden! is rated 4+ and made for families. We don't ask children for personal information. <strong>Picture Mode</strong>, made for younger players, is played entirely on the device; the usage statistics described above record that it was opened, and nothing while it is open. The only place anyone can type personal information is the online display name, and we suggest using a nickname there.</p>
     <p>If you believe a child has entered personal information through Online play, email us and we will delete it.</p>
 
     <h2>Your choices</h2>
     <ul>
       <li>Don't use Online play, and nothing leaves your device for it.</li>
       <li>Use a nickname instead of your real name.</li>
+      <li>Turn off "Share usage statistics" in the app's Settings to stop usage statistics.</li>
       <li>Delete the app to remove everything stored on your device.</li>
       <li>Email us to have a room, or your anonymous user ID and its sign-in record, deleted.</li>
       <li>Manage or cancel a subscription in your Apple ID settings.</li>
