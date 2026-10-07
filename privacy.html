@@ -177,7 +177,7 @@
       <li>Your anonymous online user ID, or any other identifier of ours.</li>
       <li>An advertising identifier or your device's vendor identifier. The app uses the version of Firebase Analytics without advertising support, and it never asks for permission to track you.</li>
     </ul>
-    <p><strong>Kid Mode</strong> (Picture Mode and the Kids word game) is treated differently. When Kid Mode is opened, the app sends one event saying so and which of the two it was. From then until you are back on a screen outside Kid Mode, nothing is recorded at all: no screen, no game step, and none of Firebase's own events. Statistics recorded before Kid Mode was opened can still be uploaded during that time; they contain nothing about the time inside Kid Mode.</p>
+    <p><strong>Kid Mode</strong> (Picture Mode and the Kids word game) is covered in the same way as the rest of the app: the app sends that Kid Mode was opened and which of the two it was, the screens opened in it, and the steps of its games. Nothing typed is sent, and the same "Share usage statistics" switch turns it off.</p>
     <p><strong>Turning it off:</strong> in the app's Settings, turn off "Share usage statistics". From that moment nothing is recorded, anything recorded but not yet uploaded is deleted from your device, and nothing is sent to Firebase Analytics. If you turn it on again, recording starts from that moment. The switch does not change crash reports or Remote Config, described above.</p>
     <p><strong>How long we keep it:</strong> usage statistics are kept for 14 months.</p>
     <p>Usage statistics are not used to track you across other companies' apps or websites, or for advertising.</p>
@@ -194,7 +194,7 @@
     </ul>
 
     <h2>Children</h2>
-    <p>Forbidden! is rated 4+ and made for families. We don't ask children for personal information. <strong>Picture Mode</strong>, made for younger players, is played entirely on the device; the usage statistics described above record that it was opened, and nothing while it is open. The only place anyone can type personal information is the online display name, and we suggest using a nickname there.</p>
+    <p>Forbidden! is rated 4+ and made for families. We don't ask children for personal information. <strong>Picture Mode</strong>, made for younger players, is played entirely on the device; the usage statistics described above cover it in the same way as the rest of the app, and the same switch turns them off. The only place anyone can type personal information is the online display name, and we suggest using a nickname there.</p>
     <p>If you believe a child has entered personal information through Online play, email us and we will delete it.</p>
 
     <h2>Your choices</h2>
